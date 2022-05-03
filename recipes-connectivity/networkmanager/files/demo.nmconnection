@@ -1,0 +1,10 @@
+[connection]
+id=demo
+type=wifi
+
+[wifi]
+ssid=neatguy
+
+[wifi-security]
+key-mgmt=wpa-psk
+psk=monkey123

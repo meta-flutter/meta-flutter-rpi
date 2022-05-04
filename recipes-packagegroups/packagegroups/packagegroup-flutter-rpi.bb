@@ -14,6 +14,7 @@ RDEPENDS:${PN} = "\
     ${OMXPLAYER} \
     bcm2835-tests \
     \
+    wpa-supplicant \
     avahi-daemon \
     kernel-modules \
     ntp ntp-tickadj \

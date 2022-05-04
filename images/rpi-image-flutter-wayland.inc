@@ -1,6 +1,10 @@
+LICENSE = "MIT"
 
-# Base this image on core-image-base
-include recipes-core/images/core-image-base.bb
+IMAGE_FEATURES += "splash package-management ssh-server-dropbear hwcodecs weston"
+
+inherit core-image
+
+QB_MEM = "-m 512"
 
 COMPATIBLE_MACHINE = "^rpi$"
 

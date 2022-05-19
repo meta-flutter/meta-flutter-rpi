@@ -31,4 +31,11 @@ IMAGE_INSTALL:append = "\
     packagegroup-flutter-rpi \
     \
     libgpiod-tools i2c-tools spidev-test can-utils \
+    \
+  	${CORE_IMAGE_BASE_INSTALL} \
+	util-linux-agetty \
+	packagegroup-core-full-cmdline \
+	packagegroup-core-selinux \
     "
+
+inherit selinux-image

@@ -4,23 +4,25 @@ IMAGE_FEATURES += "splash package-management ssh-server-dropbear hwcodecs weston
 
 inherit core-image
 
+require conf/include/flutter-runtime.inc
+
 QB_MEM = "-m 512"
 
 COMPATIBLE_MACHINE = "^rpi$"
 
 IMAGE_INSTALL:append = "\
     \
-    flutter-engine-${FLUTTER_RUNTIME} \
-    ivi-homescreen-${FLUTTER_RUNTIME} \
+    flutter-engine-${@gn_get_flutter_runtime_name(d)} \
+    ivi-homescreen-${@gn_get_flutter_runtime_name(d)} \
     \
-    agl-flutter-igalia-homescreen-${FLUTTER_RUNTIME} \
-    agl-flutter-pumped-fuel-ped-${FLUTTER_RUNTIME} \
+    flutter-app-igalia-homescreen-${@gn_get_flutter_runtime_name(d)} \
+    flutter-app-pumped-fuel-ped-${@gn_get_flutter_runtime_name(d)} \
     \
-    flutter-gallery-${FLUTTER_RUNTIME} \
-    flutter-test-plugins-${FLUTTER_RUNTIME} \
-    flutter-test-secure-storage-${FLUTTER_RUNTIME} \
-    flutter-test-texture-egl-${FLUTTER_RUNTIME} \
-    flutter-test-video-player-${FLUTTER_RUNTIME} \
+    flutter-gallery-${@gn_get_flutter_runtime_name(d)} \
+    flutter-test-plugins-${@gn_get_flutter_runtime_name(d)} \
+    flutter-test-secure-storage-${@gn_get_flutter_runtime_name(d)} \
+    flutter-test-texture-egl-${@gn_get_flutter_runtime_name(d)} \
+    flutter-test-video-player-${@gn_get_flutter_runtime_name(d)} \
     \
     adwaita-icon-theme-cursors \
     geoclue \

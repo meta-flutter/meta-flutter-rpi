@@ -19,7 +19,6 @@ IMAGE_INSTALL:append = "\
     flutter-app-pumped-fuel-ped-${@gn_get_flutter_runtime_name(d)} \
     \
     flutter-gallery-${@gn_get_flutter_runtime_name(d)} \
-    flutter-test-plugins-${@gn_get_flutter_runtime_name(d)} \
     flutter-test-secure-storage-${@gn_get_flutter_runtime_name(d)} \
     flutter-test-texture-egl-${@gn_get_flutter_runtime_name(d)} \
     flutter-test-video-player-${@gn_get_flutter_runtime_name(d)} \

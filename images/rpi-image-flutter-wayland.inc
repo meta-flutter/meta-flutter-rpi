@@ -43,7 +43,4 @@ IMAGE_INSTALL:append = "\
     ${CORE_IMAGE_BASE_INSTALL} \
     util-linux-agetty \
     packagegroup-core-full-cmdline \
-    packagegroup-core-selinux \
     "
-
-inherit selinux-image

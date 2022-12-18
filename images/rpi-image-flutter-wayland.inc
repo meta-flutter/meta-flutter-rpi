@@ -12,21 +12,11 @@ COMPATIBLE_MACHINE = "^rpi$"
 
 IMAGE_INSTALL:append = "\
     \
-    flutter-engine-${@gn_get_flutter_runtime_name(d)} \
-    ivi-homescreen-${@gn_get_flutter_runtime_name(d)} \
-    \
-    flutter-app-igalia-homescreen-${@gn_get_flutter_runtime_name(d)} \
-    flutter-app-pumped-fuel-ped-${@gn_get_flutter_runtime_name(d)} \
-    \
-    flutter-gallery-${@gn_get_flutter_runtime_name(d)} \
-    flutter-test-secure-storage-${@gn_get_flutter_runtime_name(d)} \
-    flutter-test-texture-egl-${@gn_get_flutter_runtime_name(d)} \
-    flutter-test-video-player-${@gn_get_flutter_runtime_name(d)} \
-    \
     adwaita-icon-theme-cursors \
     geoclue \
     gsettings-desktop-schemas \
-    liberation-fonts \    
+    liberation-fonts \
+    \
     libgpiod \
     libserialport \
     networkmanager \

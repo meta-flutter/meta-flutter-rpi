@@ -4,8 +4,6 @@ IMAGE_FEATURES += "splash package-management ssh-server-dropbear hwcodecs weston
 
 inherit core-image
 
-require conf/include/flutter-runtime.inc
-
 QB_MEM = "-m 512"
 
 COMPATIBLE_MACHINE = "^rpi$"

@@ -1,4 +1,5 @@
 LICENSE = "MIT"
+LIC_FILES_CHKSUM = "file://${COREBASE}/meta/COPYING.MIT;md5=3da9cfbcb788c80a0384361b4de20420"
 
 IMAGE_FEATURES += "splash package-management ssh-server-dropbear hwcodecs weston"
 
@@ -26,7 +27,10 @@ IMAGE_INSTALL:append = "\
     \
     packagegroup-flutter-rpi \
     \
-    libgpiod-tools i2c-tools spidev-test can-utils \
+    libgpiod-tools \
+    i2c-tools \
+    spidev-test \
+    can-utils \
     \
     ${CORE_IMAGE_BASE_INSTALL} \
     util-linux-agetty \

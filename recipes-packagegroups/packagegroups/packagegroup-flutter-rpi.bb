@@ -31,17 +31,6 @@ RDEPENDS:${PN} = "\
     alsa-state \
     alsa-utils \
     alsa-utils-scripts \
-    \
-    gstreamer1.0 \
-    gstreamer1.0-libav \
-    gstreamer1.0-meta-base \
-    gstreamer1.0-omx \
-    gstreamer1.0-plugins-bad \
-    gstreamer1.0-plugins-base \
-    gstreamer1.0-plugins-base-alsa \
-    gstreamer1.0-plugins-good \
-    gstreamer1.0-plugins-ugly \
-    x264 \
 "
 
 RRECOMMENDS:${PN} = "\
